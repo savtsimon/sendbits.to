@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="form-card col-xs-12 col-md-12 d-flex flex-column align-items-center justify-content-center">
+        <div class="card shadow login-card">
+            <div class="card-body">
+                <h5 class="card-title mt-4 mb-4">Login</h5>
+                <form action="/login" method="POST">
+                    <div class="mb-3">
+                        <input class="form-control" type="text" id="username" name="username" placeholder="Username"
+                            required autofocus>
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control" type="password" id="password"
+                            name="password" placeholder="Password" required>
+                    </div>
+                    <div class="d-grid mb-2 align-items-center justify-content-center">
+                        <a href="/forgotpassword" class="dull-link card-link">Forgot password?</a>
+                    </div>
+                    <div class="d-grid gap-2 align-items-center justify-content-center p-2">
+                        <button class="btn form-button">Login</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

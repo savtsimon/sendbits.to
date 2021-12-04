@@ -1,11 +1,16 @@
 {% extends "layout.html" %}
-{% block css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
-{% endblock %}
 
 {% block content %}
-<div class="container">
-    <div><h1>{{title}}</h1></div>
-    <div><p>{{description}}</p></div>
+<div class="first-container">
+    <section class="section-1">
+        <div class="row">
+            <div class="home row col-xs-12 col-md-12 d-flex flex-column align-items-center justify-content-center">
+                <!-- <div class="row"> -->
+                    <div><h1 class="main-banner">{{title}}</h1></div>
+                    <div><p class="sub-banner">{{description}}</p></div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
 </div>
 {% endblock %}

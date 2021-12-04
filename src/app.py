@@ -8,8 +8,22 @@ app = Flask(__name__)
 def home_page():
     return render_template(
         "home.html",
-        title="Welcome to sendbits.to!",
-        description="Share all your crypto wallets easily with just one link."
+        title="sendbits.to",
+        description="A single, shareable link for all of your crypto wallet addresses."
+    )
+
+
+@app.route("/login")
+def login_page():
+    return render_template(
+        "login.html"
+    )
+
+
+@app.route("/register")
+def register_page():
+    return render_template(
+        "register.html"
     )
 
 

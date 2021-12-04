@@ -1,0 +1,129 @@
+/* Overarching styles */
+body {
+    font-family: 'Comfortaa';
+}
+
+/* Navbar styles */
+
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus{
+    color: #659FFF;
+    font-size: 32px;
+}
+.nav-link, .nav-link:hover, .nav-link:focus{
+    color: #659FFF;
+    font-size: 20px; 
+}
+
+
+@media (min-width: 992px) {
+    .white-button, .blue-button:active{
+        background-color: white;
+        color: #659FFF !important;
+        border-radius: 15px;
+        border: 2px, solid, #659FFF;
+        max-width: 200px;
+    }
+    .blue-button, .white-button:active{
+        background-color: #659FFF;
+        color: white !important;
+        border-radius: 15px;
+        border: 2px, solid, white;
+        max-width: 200px;
+    } 
+}
+
+.navbar-toggler{
+    color: #659FFF;
+}
+.navbar-toggler:focus{
+    border-color: #659FFF;
+}
+.fa-bars{
+    color: #659FFF;
+}
+
+/* Home Page */
+.home{
+    min-height: 75vh;
+}
+.first-container{
+    /* background-color: #e0edff; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    height: 100vh;
+    min-height: 100vh;
+}
+.section-1{
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 18%;
+    padding-bottom: 18%; */
+}
+/* @media (min-width:) */
+.main-banner{
+    text-align: center;
+    justify-content: center;
+    color: #659FFF;
+    font-size: 10vw;
+}
+.sub-banner{
+    text-align: center;
+    justify-content: center;
+    color: #676767;
+    font-size: calc(16px+0.1vw);
+}
+
+/* Links */
+a, a:hover{
+    color:#659FFF;
+    text-decoration: none;
+}
+
+/* Login Page */
+.form-card{
+    min-height: 75vh;
+}
+.login-card{
+    width: 18rem;
+    height: 20rem;
+}
+.reg-card{
+    width: 18rem;
+    height: 22rem;
+}
+.card-title{
+    color: #659FFF;
+    text-align: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.dull-link, .dull-link:hover{
+    font-size: 14px;
+    color: #7e7e7e;
+}
+.footer{
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+}
+ .form-label, input::-webkit-input-placeholder{
+     font-size: 18px;
+ }
+.form-button:active{
+    background-color: white;
+    color: #659FFF !important;
+    border-radius: 15px;
+    border: 2px, solid, #659FFF;
+    max-width: 200px;
+}
+.form-button{
+    background-color: #659FFF;
+    color: white !important;
+    border-radius: 15px;
+    border: 2px, solid, white;
+    max-width: 200px;
+} 
+
