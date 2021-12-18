@@ -2,15 +2,55 @@
 
 {% block content %}
 <div class="first-container">
-    <section class="section-1">
-        <div class="row">
-            <div class="home row col-xs-12 col-md-12 d-flex flex-column align-items-center justify-content-center">
-                <!-- <div class="row"> -->
-                    <div><h1 class="main-banner">{{title}}</h1></div>
-                    <div><p class="sub-banner">{{description}}</p></div>
-                <!-- </div> -->
+    <div class="section-1" id="home">
+        <div class="home row col-xs-12 col-md-12 d-flex flex-column align-items-center justify-content-center">
+            <div><h1 class="main-banner">sendbits.to</h1></div>
+            <div><p class="sub-banner">A single, shareable link for all of your crypto wallet addresses.</p></div>
+            <div class="home-search">
+                <form class="d-flex justify-content-center align-items-center" action="/search" method="GET">
+                    <input class="form-control me-2 search-bar" type="search" placeholder="Search by username or wallet" aria-label="Search">
+                    <button class="btn search-btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+<div class="second-container">
+    <div class="section2" id="about">
+        <div class="about row justify-content-evenly align-items-start align-content-center
+        shadow flex-grow-1 py-5">
+            <div class="three-item col-md-3 col-sm-7 d-flex flex-column justify-content-center
+            align-items-center">
+                <span class="icon">
+                    <i class="fas fa-at three-icon"></i>
+                </span>
+                <h3 class="three-heading">One Link</h3>
+                <p class="three-text">No more struggling to find long wallet addresses and figuring out which currency they're for. Now, you can keep all of your addresses in one place and share them easily. You can find people by username or wallet address and easily pay or get paid in your currency of choice.</p>
+            </div>
+            <div class="three-item col-md-3 col-sm-7 d-flex flex-column justify-content-center
+            align-items-center">
+                <span class="icon">
+                    <i class="fas fa-users three-icon"></i>
+                </span>
+                <h3 class="three-heading">Free</h3>
+                <p class="three-text">There are way too many things that need subscriptions these days. With sendbits.to, you don't have to pay a thing. Sendbits.to is an open source program dedicated to providing the best experience at no cost to you.</p>
+            </div>
+            <div class="three-item col-md-3 col-sm-7 d-flex flex-column justify-content-center
+            align-items-center">
+                <span class="icon">
+                    <i class="far fa-paper-plane three-icon"></i>
+                </span>
+                <h3 class="three-heading">Easy</h3>
+                <p class="three-text">It has never been easier to find people in the crypto space for easy payments. Now all of your wallets can be found in your sendbits.to account link. No more struggling to find the long wallet addresses and figuring out which currency it's for.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="foot-container justify-content-center align-items-center py-5">
+    <footer>
+        <div class="container px-4 px-lg-5 foot-item">Contact us at <a href="mailto:support@sendbits.to"
+            class="link">support@sendbits.to</a></div>
+        <div class="container px-4 px-lg-5 foot-item">Copyright &copy;sendbits.to 2021</div>
+    </footer>
 </div>
 {% endblock %}

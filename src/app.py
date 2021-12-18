@@ -7,9 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def home_page():
     return render_template(
-        "home.html",
-        title="sendbits.to",
-        description="A single, shareable link for all of your crypto wallet addresses."
+        "home.html"
     )
 
 
